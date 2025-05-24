@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="minicart">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="minicart_content" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="extra_info" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="subtotal.container" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="checkout.cart.validationmessages" xsi:type="array">
+                                                    <item name="sortOrder" xsi:type="string">100</item>
+                                                </item>
+                                                <item name="subtotal" xsi:type="array">
+                                                    <item name="sortOrder" xsi:type="string">200</item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                                <item name="promotion" xsi:type="array">
+                                    <item name="sortOrder" xsi:type="string">300</item>
+                                </item>
+                                <item name="item.renderer" xsi:type="array">
+                                    <item name="sortOrder" xsi:type="string">400</item>
+                                </item>
+                                <item name="cart_items" xsi:type="array">
+                                    <item name="sortOrder" xsi:type="string">500</item>
+                                </item>
+                                <item name="totals" xsi:type="array">
+                                    <item name="sortOrder" xsi:type="string">600</item>
+                                </item>
+                                <item name="buttons" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="view_cart" xsi:type="array">
+                                            <item name="sortOrder" xsi:type="string">700</item>
+                                        </item>
+                                        <item name="proceed.checkout" xsi:type="array">
+                                            <item name="sortOrder" xsi:type="string">800</item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page> 

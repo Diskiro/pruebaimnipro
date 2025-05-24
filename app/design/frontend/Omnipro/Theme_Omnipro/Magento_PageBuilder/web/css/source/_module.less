@@ -1,0 +1,32 @@
+//
+//  Page Builder styles
+//  _____________________________________________
+
+& when (@media-common = true) {
+    [data-content-type='row'][data-appearance='contained'] {
+        @media only screen and (max-width: @screen__m) {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+        }
+    }
+}
+
+//
+//  Mobile (style-m.css)
+//  _____________________________________________
+
+@media only screen and (max-width: @screen__m) {
+    .pagebuilder-mobile-hidden {
+        display: none !important;
+    }
+}
+
+//
+//  Desktop (style-l.css)
+//  _____________________________________________
+
+@media only screen and (min-width: (@screen__m + 1)) {
+    .pagebuilder-desktop-hidden {
+        display: none !important;
+    }
+} 

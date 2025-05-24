@@ -1,0 +1,15 @@
+@import 'theme_omnipro/base/_buttons.less';
+@import '_theme.less';
+@import '_variables.less';
+
+
+& when (@media-common = true) {
+    .abs-product-link {
+        font-weight: @font-weight__regular;
+        > a {
+            .lib-link(
+            @_link-color: @link__color
+            );
+        }
+    }
+}
