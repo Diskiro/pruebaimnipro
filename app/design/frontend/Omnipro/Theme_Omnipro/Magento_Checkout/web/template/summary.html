@@ -1,0 +1,19 @@
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<div class="opc-block-summary" data-bind="blockLoader: isLoading">
+    <span data-bind="i18n: 'Order Summary'" class="title"></span>
+    <!-- ko foreach: elems() -->
+        <!-- ko template: getTemplate() --><!-- /ko -->
+    <!-- /ko -->
+    <!-- ko if: quote.shippingAddress() && quote.shippingAddress().countryId === 'CO' -->
+    <div class="message info">
+        <div>
+            <strong>¡Importante!</strong>
+            <p>Para envíos a Colombia, por favor asegúrese de proporcionar una dirección completa y válida.</p>
+        </div>
+    </div>
+    <!-- /ko -->
